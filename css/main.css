@@ -1,4 +1,8 @@
 @charset "UTF-8";
+* {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box; }
+
 body, h1, h2, h3, p, ul, li {
   padding: 0;
   margin: 0;
@@ -16,8 +20,11 @@ a {
 
 div.container {
   width: 100%;
-  max-width: 1200px;
-  margin: 0 auto; }
+  max-width: 1240px;
+  margin: 0 auto;
+  padding: 0 20px;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box; }
 
 header {
   height: 580px;
@@ -62,6 +69,9 @@ section.trial {
       padding: 156px 0 0; }
       section.trial div.trial_wrap div.trial_wrap_box1 p:first-child {
         margin: 0 0 90px; }
+        section.trial div.trial_wrap div.trial_wrap_box1 p:first-child img {
+          width: 100%;
+          height: auto; }
       section.trial div.trial_wrap div.trial_wrap_box1 p.button {
         font-size: 46px;
         color: #fff;
@@ -98,13 +108,9 @@ section.trial {
         align-items: center;
         border-radius: 50%;
         color: #009944;
-        font-size: 30px;
-        position: relative; }
-        section.trial div.trial_wrap div.trial_wrap_box2 div.circle:first-child {
-          margin: 0 0 0px 0; }
-          section.trial div.trial_wrap div.trial_wrap_box2 div.circle:first-child + p {
-            margin: 0 0 0px 0;
-            font-size: 72px; }
+        font-size: 30px; }
+        section.trial div.trial_wrap div.trial_wrap_box2 div.circle:first-child + p {
+          font-size: 72px; }
         section.trial div.trial_wrap div.trial_wrap_box2 div.circle:nth-of-type(2) {
           color: #f86e00;
           border: 7px dashed #f86e00; }
