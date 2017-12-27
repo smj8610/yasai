@@ -15,8 +15,6 @@ $btm: 22px;
   box-shadow: none;
 }
 
-.button {}
-
 div.container {
   width: 100%;
   max-width: 1240px;
@@ -38,6 +36,9 @@ header {
 /** section.trial **/
 section.trial {
   text-align: center;
+  width: 100%;
+  max-width: 960px;
+  margin: 0 auto 120px;
   h2 {
     font-weight: 100;
     font-size: 30px;

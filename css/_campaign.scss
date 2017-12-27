@@ -1,0 +1,60 @@
+$pinkred: #e4585c;
+
+section.campaign {
+  width: 960px;
+  max-width: 100%;
+  margin: 0 auto;
+  text-align: center;
+  font-feature-settings: "palt";
+
+  &>p:first-child{
+    margin: 0 0 50px;
+  }
+
+  h2 {
+    font-size: 40px;
+    color: $pinkred;
+    margin: 0 0 -6px;
+    font-weight: inherit;
+
+    &+p {
+      font-size: 72px;
+      color: $pinkred;
+      font-weight: bold;
+      letter-spacing: 0.03em;
+      margin: 0 0 30px;
+
+      & span {
+        font-size: 120px;
+      }
+
+      &+p {
+        font-size: 30px;
+        line-height: 1.5;
+        font-weight: bold;
+        color: #333;
+        margin: 0 0 76px;
+      }
+    }
+  }
+
+  ul {
+    display: flex;
+    justify-content: space-between;
+
+    img {
+      width: 100%;
+      height: auto;
+    }
+
+    li {
+      width: 100%;
+      max-width: 300px;
+      p:first-child {
+        height: 260px;
+        img{
+        }
+      }
+    }
+  }
+}

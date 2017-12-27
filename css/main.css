@@ -7,7 +7,7 @@ body, h1, h2, h3, p, ul, li {
   padding: 0;
   margin: 0;
   line-height: 1;
-  font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", "Segoe UI","Noto Sans Japanese","ヒラギノ角ゴ ProN W3", Meiryo, sans-serif; }
+  font-family: "ヒラギノ角ゴ ProN W3", Meiryo, sans-serif; }
 
 ul {
   list-style: none; }
@@ -44,7 +44,10 @@ header {
 
 /** section.trial **/
 section.trial {
-  text-align: center; }
+  text-align: center;
+  width: 100%;
+  max-width: 960px;
+  margin: 0 auto 120px; }
   section.trial h2 {
     font-weight: 100;
     font-size: 30px;
@@ -121,5 +124,100 @@ section.trial {
             display: inline-block;
             text-decoration: underline;
             line-height: 1.2; }
+
+/** section.about **/
+section.about {
+  width: 100%;
+  height: 735px;
+  background: url("../img/about_bg.png") no-repeat;
+  background-position: center center;
+  background-size: cover;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  margin: 0 0 90px 0; }
+  section.about .about_box {
+    width: 100%;
+    max-width: 680px;
+    height: 610px;
+    background: rgba(255, 255, 255, 0.5);
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    margin: 0 0 0 92px; }
+    section.about .about_box .about_box_inner {
+      -webkit-font-feature-settings: "palt";
+      font-feature-settings: "palt"; }
+      section.about .about_box .about_box_inner p {
+        font-size: 36px;
+        margin: 0 0 48px 0; }
+        section.about .about_box .about_box_inner p:first-child {
+          -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+          padding: 0 0 12px 0;
+          border-bottom: 2px dashed #000;
+          display: inline-block;
+          margin: 0 0 30px 0; }
+        section.about .about_box .about_box_inner p:last-child {
+          font-size: 24px;
+          line-height: 2;
+          margin: 0; }
+      section.about .about_box .about_box_inner h2 {
+        font-size: 60px;
+        font-weight: 100;
+        margin: 0 0 40px 0; }
+
+section.campaign {
+  width: 960px;
+  max-width: 100%;
+  margin: 0 auto;
+  text-align: center;
+  -webkit-font-feature-settings: "palt";
+  font-feature-settings: "palt"; }
+  section.campaign > p:first-child {
+    margin: 0 0 50px; }
+  section.campaign h2 {
+    font-size: 40px;
+    color: #e4585c;
+    margin: 0 0 -6px;
+    font-weight: inherit; }
+    section.campaign h2 + p {
+      font-size: 72px;
+      color: #e4585c;
+      font-weight: bold;
+      letter-spacing: 0.03em;
+      margin: 0 0 30px; }
+      section.campaign h2 + p span {
+        font-size: 120px; }
+      section.campaign h2 + p + p {
+        font-size: 30px;
+        line-height: 1.5;
+        font-weight: bold;
+        color: #333;
+        margin: 0 0 76px; }
+  section.campaign ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between; }
+    section.campaign ul img {
+      width: 100%;
+      height: auto; }
+    section.campaign ul li {
+      width: 100%;
+      max-width: 300px; }
+      section.campaign ul li p:first-child {
+        height: 260px; }
 
 /*# sourceMappingURL=main.css.map */
