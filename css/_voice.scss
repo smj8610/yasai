@@ -1,0 +1,56 @@
+@mixin megahon {
+  content: "";
+  display: inline-block;
+  background: url("../img/megahon.png");
+  width: 173px;
+  height: 148px;
+  background-size: 173px 148px;
+}
+
+section.voice {
+  width: 100%;
+  max-width: 960px;
+  margin: 0 auto 156px;
+  text-align: center;
+
+  h2 {
+    color: #ffa800;
+    font-size: 72px;
+    margin: 0 0 58px;
+
+    &::before {
+      @include megahon;
+      margin: 0 60px 0 0;
+    }
+
+    &::after {
+      @include megahon;
+      transform: scale(-1,1);
+      margin: 0 0 0 60px;
+    }
+
+    &+p {
+      font-size: 30px;
+      color: #333;
+      font-weight: bold;
+      letter-spacing: 1px;
+      margin: 0 0 100px;
+    }
+  }
+
+  .voice_box {
+    display: flex;
+    justify-content: space-between;
+    margin:0 0 100px;
+    &:nth-of-type(2){
+      flex-direction: row-reverse;
+    }
+    &:last-of-type{
+      margin:0;
+    }
+    & > p:first-child {
+      max-width: 224px;
+      height: auto;
+    }
+  }
+}

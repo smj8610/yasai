@@ -9,6 +9,10 @@ $btm: 22px;
   display: inline-block;
   position: relative;
   top: 0;
+  font-size: 46px;
+  color: #fff;
+  padding: 34px 100px;
+  font-weight: bold;
 }
 @mixin cvBtnhover{
   top: 9px;
@@ -74,10 +78,8 @@ section.trial {
       }
 
       p.button {
-        font-size: 46px;
-        color: #fff;
-        padding: 34px 100px;
         @include cvBtn;
+        font-weight: bold;
         &:after{
           content: "▶︎";
           margin: 0 0 0 20px;

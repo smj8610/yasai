@@ -1,0 +1,71 @@
+section.ten_food {
+  width: 960px;
+  max-width: 100%;
+  margin: 0 auto;
+  text-align: center;
+  p:first-child {
+    margin: 0 0 48px;
+    img {
+      max-width: 322px;
+    }
+  }
+  h2{
+    font-size: 48px;
+    color: #bf6802;
+    margin: 0 0 24px;
+    & + p{
+      font-size: 24px;
+      font-weight: bold;
+      color: #333;
+      line-height: 1.5;
+      margin: 0 0 54px;
+      & + p{
+        margin: 0 0 32px;
+      }
+    }
+  }
+  ul{
+    display: flex;
+    flex-wrap: wrap;
+    margin:0 0 50px;
+    li{
+      width:100%;
+      max-width: 152px;
+      margin: 0 50px 0 0;
+      font-feature-settings : "palt";
+      &:nth-child(5n){
+        margin:0;
+      }
+      img{
+        margin: 0 0 40px;
+      }
+      p:first-of-type{
+        margin: 0 0 14px;
+      }
+      h3{
+        font-size: 30px;
+        font-weight: 100;
+        margin: 0 0 14px;
+      }
+      &:nth-child(-n+5){
+        margin-bottom:50px;
+      }
+      &:nth-last-child(2){
+        img + p{
+          letter-spacing: -1px;
+        }
+      }
+    }
+    & + p{
+      transform: rotate(180deg);
+      margin: 0 0 90px;
+    }
+  }
+  p.button{
+    @include cvBtn;
+    margin:0 0 190px;
+    &:hover{
+      @include cvBtnhover;
+    }
+  }
+}

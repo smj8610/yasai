@@ -7,8 +7,12 @@ section.campaign {
   text-align: center;
   font-feature-settings: "palt";
 
-  &>p:first-child{
+  & > p:first-child {
     margin: 0 0 50px;
+
+    img {
+      max-width: 331px;
+    }
   }
 
   h2 {
@@ -34,6 +38,10 @@ section.campaign {
         font-weight: bold;
         color: #333;
         margin: 0 0 76px;
+
+        &+p {
+          margin: 0 0 44px;
+        }
       }
     }
   }
@@ -50,11 +58,34 @@ section.campaign {
     li {
       width: 100%;
       max-width: 300px;
+
       p:first-child {
         height: 260px;
-        img{
+        display: flex;
+        align-items: flex-end;
+        margin: 0 0 56px;
+
+        &+p {
+          font-size: 24px;
+          margin: 0 0 32px;
+        }
+      }
+
+      h3 {
+        font-size: 72px;
+        margin: 0 0 40px;
+
+        &+p {
+          font-size: 20px;
+          line-height: 1.7;
+          margin:0 0 104px;
         }
       }
     }
+  }
+
+  & > p:last-child {
+    transform: rotate(180deg);
+    margin:0 0 124px;
   }
 }
