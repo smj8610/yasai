@@ -27,11 +27,14 @@ div.container {
   box-sizing: border-box;
 }
 
+body{
+  background: url("../img/body_bg.png");
+}
+
 header {
   height: 580px;
-  background: url("../img/key_visual.jpg") no-repeat;
+  background: url("../img/key_visual.jpg") center center no-repeat;
   background-size: cover;
-  background-position: center center;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -107,6 +110,7 @@ section.trial {
         &:first-child{
           & + p{
             font-size: 72px;
+            font-weight: bold;
           }
         }
         &:nth-of-type(2){

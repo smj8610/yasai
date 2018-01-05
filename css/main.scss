@@ -13,3 +13,8 @@
 @import '_voice.scss';
 
 @import '_lastConversion.scss';
+
+//タブレット
+@media screen and (max-width:768px){
+  @import 'media-query.scss';
+}

@@ -28,11 +28,13 @@ div.container {
   -webkit-box-sizing: border-box;
   box-sizing: border-box; }
 
+body {
+  background: url("../img/body_bg.png"); }
+
 header {
   height: 580px;
-  background: url("../img/key_visual.jpg") no-repeat;
+  background: url("../img/key_visual.jpg") center center no-repeat;
   background-size: cover;
-  background-position: center center;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -117,7 +119,8 @@ section.trial {
         color: #009944;
         font-size: 30px; }
         section.trial div.trial_wrap div.trial_wrap_box2 div.circle:first-child + p {
-          font-size: 72px; }
+          font-size: 72px;
+          font-weight: bold; }
         section.trial div.trial_wrap div.trial_wrap_box2 div.circle:nth-of-type(2) {
           color: #f86e00;
           border: 7px dashed #f86e00; }
@@ -225,7 +228,7 @@ section.campaign {
     section.campaign ul li {
       width: 100%;
       max-width: 300px; }
-      section.campaign ul li p:first-child {
+      section.campaign ul li > p:first-child {
         height: 260px;
         display: -webkit-box;
         display: -ms-flexbox;
@@ -234,12 +237,15 @@ section.campaign {
         -ms-flex-align: end;
         align-items: flex-end;
         margin: 0 0 56px; }
-        section.campaign ul li p:first-child + p {
-          font-size: 24px;
-          margin: 0 0 32px; }
+      section.campaign ul li .inner p:first-child {
+        font-size: 24px;
+        margin: 0 0 34px;
+        font-family: "Yu Mincho", "YuMincho"; }
       section.campaign ul li h3 {
         font-size: 72px;
-        margin: 0 0 40px; }
+        margin: 0 0 40px;
+        font-family: "Yu Mincho", "YuMincho";
+        font-weight: 400; }
         section.campaign ul li h3 + p {
           font-size: 20px;
           line-height: 1.7;
@@ -283,7 +289,8 @@ section.ten_food {
       max-width: 152px;
       margin: 0 50px 0 0;
       -webkit-font-feature-settings: "palt";
-      font-feature-settings: "palt"; }
+      font-feature-settings: "palt";
+      color: #333; }
       section.ten_food ul li:nth-child(5n) {
         margin: 0; }
       section.ten_food ul li img {
@@ -431,5 +438,278 @@ footer {
     -webkit-box-pack: justify;
     -ms-flex-pack: justify;
     justify-content: space-between; }
+
+@media screen and (max-width: 768px) {
+  div.container {
+    padding: 0; }
+  header {
+    height: 340px;
+    margin: 0 0 48px; }
+  section.trial {
+    text-align: center;
+    width: 100%;
+    max-width: 960px;
+    margin: 0 auto 54px;
+    padding: 0 30px; }
+    section.trial h2 {
+      font-size: 22px; }
+    section.trial div.trial_wrap {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: none;
+      -ms-flex-pack: none;
+      justify-content: none;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: reverse;
+      -ms-flex-direction: column-reverse;
+      flex-direction: column-reverse; }
+      section.trial div.trial_wrap div.trial_wrap_box1 {
+        padding: 20px 0 0; }
+        section.trial div.trial_wrap div.trial_wrap_box1 p:first-child {
+          margin: 0 0 30px; }
+          section.trial div.trial_wrap div.trial_wrap_box1 p:first-child img {
+            max-width: 350px; }
+      section.trial div.trial_wrap div.trial_wrap_box2 {
+        width: 100%;
+        max-width: 100%;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+        justify-content: space-between; }
+        section.trial div.trial_wrap div.trial_wrap_box2 div.circle {
+          width: 100%;
+          max-width: 320px;
+          height: 320px;
+          font-size: 24px; }
+          section.trial div.trial_wrap div.trial_wrap_box2 div.circle:first-child + p {
+            font-size: 36px;
+            height: 320px;
+            line-height: 320px; }
+          section.trial div.trial_wrap div.trial_wrap_box2 div.circle p {
+            margin: 0 0 10px; }
+            section.trial div.trial_wrap div.trial_wrap_box2 div.circle p:nth-child(2) {
+              font-size: 46px;
+              line-height: 1.5; }
+  section.about {
+    width: 100%;
+    height: 478px;
+    margin: 0 0 70px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center; }
+    section.about .about_box {
+      max-width: 690px;
+      height: 412px;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      align-items: center;
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
+      justify-content: center;
+      margin: 0; }
+      section.about .about_box .about_box_inner {
+        text-align: center; }
+        section.about .about_box .about_box_inner p {
+          font-size: 28px;
+          margin: 0 0 30px; }
+          section.about .about_box .about_box_inner p:first-child {
+            padding: 0 0 8px;
+            margin: 0 0 30px; }
+          section.about .about_box .about_box_inner p:last-child {
+            font-size: 24px;
+            line-height: 1.5;
+            text-align: left; }
+        section.about .about_box .about_box_inner h2 {
+          font-size: 60px;
+          font-weight: 100;
+          margin: 0 0 18px; }
+  section.campaign {
+    padding: 0 30px; }
+    section.campaign > p:first-child {
+      margin: 0 0 50px; }
+      section.campaign > p:first-child img {
+        max-width: 234px; }
+    section.campaign h2 {
+      font-size: 36px;
+      color: #e4585c;
+      margin: 0 0 -6px;
+      font-weight: inherit; }
+      section.campaign h2 + p {
+        font-size: 52px;
+        letter-spacing: 0;
+        margin: 0 0 30px; }
+        section.campaign h2 + p span {
+          font-size: 96px; }
+        section.campaign h2 + p + p {
+          font-size: 20px;
+          margin: 0 0 36px; }
+          section.campaign h2 + p + p + p {
+            margin: 0 0 44px; }
+    section.campaign ul {
+      display: block;
+      -webkit-box-pack: none;
+      -ms-flex-pack: none;
+      justify-content: none; }
+      section.campaign ul img {
+        width: 100%;
+        height: auto; }
+      section.campaign ul li {
+        width: 100%;
+        max-width: 100%;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+        justify-content: space-between;
+        margin: 0 0 78px; }
+        section.campaign ul li:last-child {
+          margin: 0 0 46px; }
+        section.campaign ul li > p:first-child {
+          height: 260px;
+          display: block;
+          margin: 0;
+          width: 100%;
+          max-width: 324px; }
+        section.campaign ul li .inner {
+          width: 100;
+          max-width: 340px;
+          text-align: left; }
+          section.campaign ul li .inner p:first-child {
+            font-size: 24px;
+            margin: 0 0 18px; }
+          section.campaign ul li .inner h3 {
+            margin: 0 0 30px; }
+            section.campaign ul li .inner h3 + p {
+              margin: 0; }
+    section.campaign > p:last-child {
+      -webkit-transform: rotate(180deg);
+      -ms-transform: rotate(180deg);
+      transform: rotate(180deg);
+      margin: 0 0 84px; }
+  section.ten_food {
+    padding: 0 30px; }
+    section.ten_food p:first-child {
+      margin: 0 0 48px; }
+      section.ten_food p:first-child img {
+        max-width: 234px; }
+    section.ten_food h2 + p {
+      margin: 0 0 24px; }
+      section.ten_food h2 + p + p {
+        margin: 0 0 32px; }
+    section.ten_food ul {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+      -ms-flex-pack: distribute;
+      justify-content: space-around;
+      margin: 0 0 0; }
+      section.ten_food ul li {
+        width: 100%;
+        max-width: 260px;
+        margin: 0 0 74px;
+        -webkit-font-feature-settings: "palt";
+        font-feature-settings: "palt"; }
+        section.ten_food ul li:nth-child(5n) {
+          margin: 0; }
+        section.ten_food ul li:nth-child(4) h3 {
+          letter-spacing: -3px; }
+        section.ten_food ul li:nth-child(8) h3 {
+          letter-spacing: -5px; }
+        section.ten_food ul li:nth-child(-n+5) {
+          margin-bottom: 74px; }
+        section.ten_food ul li:nth-child(n+9) {
+          margin: 0 0 54px; }
+        section.ten_food ul li img {
+          margin: 0 0 40px; }
+        section.ten_food ul li p {
+          font-size: 24px; }
+        section.ten_food ul li p:first-of-type {
+          margin: 0 0 14px; }
+        section.ten_food ul li h3 {
+          font-size: 60px;
+          margin: 0 0 14px; }
+      section.ten_food ul + p {
+        -webkit-transform: rotate(180deg);
+        -ms-transform: rotate(180deg);
+        transform: rotate(180deg);
+        margin: 0 0 66px; }
+    section.ten_food p.button {
+      border-radius: 30px;
+      -webkit-box-shadow: 0 9px 0 #8e0707;
+      box-shadow: 0 9px 0 #8e0707;
+      background: #be1818;
+      display: inline-block;
+      position: relative;
+      top: 0;
+      font-size: 46px;
+      color: #fff;
+      padding: 34px 100px;
+      font-weight: bold;
+      margin: 0 0 116px; }
+      section.ten_food p.button:hover {
+        top: 9px;
+        -webkit-box-shadow: none;
+        box-shadow: none; }
+  section.voice {
+    margin: 0 auto 156px;
+    padding: 0 30px; }
+    section.voice h2 {
+      font-size: 60px;
+      margin: 0 0 40px; }
+      section.voice h2::before {
+        content: "";
+        display: inline-block;
+        background: url("../img/megahon.png");
+        width: 142px;
+        height: 125px;
+        background-size: 142px 125px;
+        margin: 0 60px 0 0; }
+      section.voice h2::after {
+        content: "";
+        display: inline-block;
+        background: url("../img/megahon.png");
+        width: 142px;
+        height: 125px;
+        background-size: 142px 125px;
+        -webkit-transform: scale(-1, 1);
+        -ms-transform: scale(-1, 1);
+        transform: scale(-1, 1);
+        margin: 0 0 0 60px; }
+      section.voice h2 + p {
+        font-size: 24px;
+        margin: 0 0 60px; }
+    section.voice .voice_box {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+      justify-content: space-between;
+      margin: 0 0 100px; }
+      section.voice .voice_box:nth-of-type(2) {
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: reverse;
+        -ms-flex-direction: row-reverse;
+        flex-direction: row-reverse; }
+      section.voice .voice_box:last-of-type {
+        margin: 0; }
+      section.voice .voice_box > p:first-child {
+        max-width: 224px;
+        height: auto; } }
 
 /*# sourceMappingURL=main.css.map */

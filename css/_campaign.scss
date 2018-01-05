@@ -59,26 +59,30 @@ section.campaign {
       width: 100%;
       max-width: 300px;
 
-      p:first-child {
+      & > p:first-child {
         height: 260px;
         display: flex;
         align-items: flex-end;
         margin: 0 0 56px;
+      }
 
-        &+p {
+      & .inner {
+        & p:first-child {
           font-size: 24px;
-          margin: 0 0 32px;
+          margin: 0 0 34px;
+          font-family: "Yu Mincho", "YuMincho";
         }
       }
 
       h3 {
         font-size: 72px;
         margin: 0 0 40px;
-
+        font-family: "Yu Mincho", "YuMincho";
+        font-weight: 400;
         &+p {
           font-size: 20px;
           line-height: 1.7;
-          margin:0 0 104px;
+          margin: 0 0 104px;
         }
       }
     }
@@ -86,6 +90,6 @@ section.campaign {
 
   & > p:last-child {
     transform: rotate(180deg);
-    margin:0 0 124px;
+    margin: 0 0 124px;
   }
 }

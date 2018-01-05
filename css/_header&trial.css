@@ -6,9 +6,8 @@ div.container {
 
 header {
   height: 580px;
-  background: url("../img/key_visual.jpg") no-repeat;
+  background: url("../img/key_visual.jpg") center center no-repeat;
   background-size: cover;
-  background-position: center center;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
